@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARCHIVE — Photo Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Raleway:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Cursor -->
+  <div id="cur-dot"></div>
+  <div id="cur-ring"></div>
+
+  <!-- Nav -->
+  <nav id="nav">
+    <a class="nav-logo" href="#">ARCHIVE</a>
+    <div class="nav-right">
+      <a class="nav-link" href="#gallery">Works</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#contact">Contact</a>
+      <div class="nav-count">
+        <span id="visibleCount">15</span> / 15 photos
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-img"></div>
+    <div class="hero-veil"></div>
+    <div class="hero-content">
+      <div class="hero-kicker">Photography Portfolio — 2024</div>
+      <h1 class="hero-title">
+        <span class="line"><span class="word">Light</span></span>
+        <span class="line"><span class="word">&amp; <em>Shadow</em></span></span>
+      </h1>
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <strong>拠点</strong>Tokyo, Japan
+        </div>
+        <div class="hero-meta-item">
+          <strong>専門</strong>Landscape / Street / Portrait
+        </div>
+        <div class="hero-meta-item">
+          <strong>経歴</strong>12 Years Active
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue">
+      <div class="scroll-cue__line"></div>
+      <div class="scroll-cue__label">scroll</div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <!-- Filter Bar -->
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All Works</button>
+      <button class="filter-btn" data-filter="landscape">Landscape</button>
+      <button class="filter-btn" data-filter="portrait">Portrait</button>
+      <button class="filter-btn" data-filter="urban">Urban</button>
+      <button class="filter-btn" data-filter="abstract">Abstract</button>
+    </div>
+
+    <!-- Grid -->
+    <div class="gallery-grid" id="grid">
+
+      <!-- Row 1 -->
+      <div class="gallery-item g-item wide" data-cat="landscape" data-title="山岳の夜明け">
+        <img src="https://picsum.photos/seed/mtn-dawn/1200/600" alt="山岳の夜明け" loading="lazy">
+        <div class="item-overlay">
+          <div class="item-cat">Landscape</div>
+          <div class="item-title">山岳の夜明け</div>
+        </div>
+        <div class="item-open">+</div>
+      </div>
+
+      <div class="gallery-item g-item tall" data-cat="portrait" data-title="静寂の中で">
+        <img src="https://picsum.photos/seed/portrait-quiet/600/1000" alt="静寂の中で" loading="lazy">
+        <div class="item-overlay">
+          <div class="item-cat">Portrait</div>
+          <div class="item-title">静寂の中で</div>
+        </div>
+        <div class="item-open">+</div>
+      </div>
+
+      <div class="gallery-item g-item" data-cat="urban" data-title="路地裏の光">
+        <img src="https://picsum.photos/seed/alley-light/600/500" alt="路地裏の光" loading="lazy">
+        <div class="item-overlay">
+          <div class="item-cat">Urban</div>
+          <div class="item-title">路地裏の光</div>
+        </div>
+        <div class="item-open">+</div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="gallery-item g-item big" data-cat="landscape" data-title="霧の森">
+        <img src="https://picsum.photos/seed/foggy-forest/900/700" alt="霧の森" loading="lazy">
+        <div class="item-overlay">
+          <div class="item-cat">Landscape</div>
+          <div class="item-title">霧の森</div>
+        </div>
+        <div class="item-open">+</div>
+      </div>
+
+      <div class="gallery-item g-item big" data-cat="abstract" data-title="光の断片">
+        <img src="https://picsum.photos/seed/light-frag/900/700" alt="光の断片" loading="lazy">
+        <div class="item-overlay">
+          <div class="item-cat">Abstract</div>
+          <div class="item-title">光の断片</div>
+        </div>
+        <div class="item-open">+</div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="gallery-item g-item" data-cat="urban" data-title="都市の息吹">
+        <img src="https://picsum.photos/seed/city-breath/600/500" alt="都市の息吹" loading="lazy">
+        <div class="item-overlay">
+          <div class="item-cat">Urban</div>
+          <div class="item-title">都市の息吹</div>
+        </div>
+        <div class="item-open">+</div>
+      </div>
+
+      <div class="gallery-item g-item tall" data-cat="portrait" data-title="眼差し">
+        <img src="https://picsum.photos/seed/gaze-still/600/1000" alt="眼差し" loading="lazy">
+        <div class="item-overlay">
+          <div class="item-cat">Portrait</div>
+          <div class="item-title">眼差し</div>
+        </div>
+        <div class="item-open">+</div>
+      </div>
+
+      <div class="gallery-item g-item" data-cat="landscape" data-title="海辺の夕暮れ">
+        <img src="https://picsum.photos/seed/coast-dusk/600/500" alt="海辺の夕暮れ" loading="lazy">
+        <div class="item-overlay">
+          <div class="item-cat">Landscape</div>
+          <div class="item-title">海辺の夕暮れ</div>
+        </div>
+        <div class="item-open">+</div>
+      </div>
+
+      <div class="gallery-item g-item" data-cat="abstract" data-title="波紋">
+        <img src="https://picsum.photos/seed/ripple-abs/600/500" alt="波紋" loading="lazy">
+        <div class="item-overlay">
+          <div class="item-cat">Abstract</div>
+          <div class="item-title">波紋</div>
+        </div>
+        <div class="item-open">+</div>
+      </div>
+
+      <!-- Row 4 — full width -->
+      <div class="gallery-item g-item hero-card" data-cat="landscape" data-title="星空の原野">
+        <img src="https://picsum.photos/seed/starfield-plain/1800/700" alt="星空の原野" loading="lazy" style="object-position:center 40%">
+        <div class="item-overlay">
+          <div class="item-cat">Landscape</div>
+          <div class="item-title">星空の原野</div>
+        </div>
+        <div class="item-open">+</div>
+      </div>
+
+      <!-- Row 5 -->
+      <div class="gallery-item g-item tall" data-cat="portrait" data-title="憂愁">
+        <img src="https://picsum.photos/seed/melancholy-p/600/1000" alt="憂愁" loading="lazy">
+        <div class="item-overlay">
+          <div class="item-cat">Portrait</div>
+          <div class="item-title">憂愁</div>
+        </div>
+        <div class="item-open">+</div>
+      </div>
+
+      <div class="gallery-item g-item" data-cat="urban" data-title="夜の駅">
+        <img src="https://picsum.photos/seed/night-station/600/500" alt="夜の駅" loading="lazy">
+        <div class="item-overlay">
+          <div class="item-cat">Urban</div>
+          <div class="item-title">夜の駅</div>
+        </div>
+        <div class="item-open">+</div>
+      </div>
+
+      <div class="gallery-item g-item wide" data-cat="abstract" data-title="幾何学の夢">
+        <img src="https://picsum.photos/seed/geo-dream/1200/600" alt="幾何学の夢" loading="lazy">
+        <div class="item-overlay">
+          <div class="item-cat">Abstract</div>
+          <div class="item-title">幾何学の夢</div>
+        </div>
+        <div class="item-open">+</div>
+      </div>
+
+      <!-- Row 6 -->
+      <div class="gallery-item g-item" data-cat="landscape" data-title="新雪">
+        <img src="https://picsum.photos/seed/fresh-snow/600/500" alt="新雪" loading="lazy">
+        <div class="item-overlay">
+          <div class="item-cat">Landscape</div>
+          <div class="item-title">新雪</div>
+        </div>
+        <div class="item-open">+</div>
+      </div>
+
+      <div class="gallery-item g-item" data-cat="urban" data-title="反射">
+        <img src="https://picsum.photos/seed/urban-reflect/600/500" alt="反射" loading="lazy">
+        <div class="item-overlay">
+          <div class="item-cat">Urban</div>
+          <div class="item-title">反射</div>
+        </div>
+        <div class="item-open">+</div>
+      </div>
+
+      <div class="gallery-item g-item" data-cat="portrait" data-title="光の中の人">
+        <img src="https://picsum.photos/seed/person-light/600/500" alt="光の中の人" loading="lazy">
+        <div class="item-overlay">
+          <div class="item-cat">Portrait</div>
+          <div class="item-title">光の中の人</div>
+        </div>
+        <div class="item-open">+</div>
+      </div>
+
+    </div><!-- /grid -->
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="about-photo reveal">
+      <img src="https://picsum.photos/seed/photographer-self/600/800" alt="Photographer">
+      <div class="about-photo-label">— Photographer</div>
+    </div>
+    <div class="about-text reveal">
+      <div class="about-tag">About</div>
+      <h2 class="about-heading">
+        光を追いかける<br><em>写真家</em>
+      </h2>
+      <div class="about-body">
+        <p>
+          東京を拠点に活動する写真家です。自然光と影の相互作用に魅せられ、
+          風景・ポートレート・ストリートフォトグラフィーを中心に制作しています。
+        </p>
+        <p>
+          一枚の写真に込めるのは、その瞬間の空気感と、見る人の心に静かに
+          触れるような感情のレイヤーです。テクニックよりも、存在することの
+          詩的な側面を大切にしています。
+        </p>
+        <p>
+          企業広告からアート展示、写真集まで幅広く対応しています。
+          新しいプロジェクトへのご相談はお気軽にどうぞ。
+        </p>
+      </div>
+      <div class="about-skills">
+        <div class="skill-tag">Landscape</div>
+        <div class="skill-tag">Portrait</div>
+        <div class="skill-tag">Street</div>
+        <div class="skill-tag">Film</div>
+        <div class="skill-tag">Darkroom</div>
+        <div class="skill-tag">Post-process</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="contact-label reveal">Get in touch</div>
+    <h2 class="contact-heading reveal">
+      一緒に<br>
+      <em>創りましょう</em>
+    </h2>
+    <div class="contact-links reveal">
+      <a class="contact-link" href="mailto:hello@archive.photo">Email</a>
+      <a class="contact-link" href="#">Instagram</a>
+      <a class="contact-link" href="#">Behance</a>
+      <a class="contact-link" href="#">Twitter / X</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-copy">© 2024 ARCHIVE. All rights reserved.</div>
+    <a class="footer-back" href="#">↑ Back to top</a>
+  </footer>
+
+  <!-- Lightbox -->
+  <div id="lightbox" role="dialog" aria-modal="true">
+    <button class="lb-close" id="lb-close">ESC / Close</button>
+    <div class="lb-inner">
+      <button class="lb-btn" id="lb-prev">&#8592;</button>
+      <img id="lb-img" src="" alt="">
+      <button class="lb-btn" id="lb-next">&#8594;</button>
+      <div class="lb-info">
+        <div class="lb-title" id="lb-title"></div>
+        <div class="lb-cat" id="lb-cat"></div>
+      </div>
+    </div>
+    <div class="lb-counter" id="lb-counter"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
